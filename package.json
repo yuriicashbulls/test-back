@@ -1,0 +1,28 @@
+{
+  "name": "test-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check_env_and_start": "env-cmd -f .env.${ENV} nodemon server.js",
+    "start_script": "NODE_ENV=${NODE_ENV} ENV=${ENV} npm run check_env_and_start",
+    "start:local": "NODE_ENV=local ENV=local npm run start_script",
+    "start:dev": "NODE_ENV=dev ENV=dev npm run start_script"
+  },
+  "private": true,
+  "dependencies": {
+    "axios": "^1.6.7",
+    "env-cmd": "^10.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "http-errors": "^2.0.0",
+    "http-status-codes": "^2.3.0",
+    "joi": "^17.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
