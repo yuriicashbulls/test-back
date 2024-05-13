@@ -1,8 +1,8 @@
 const axios = require("axios");
 
-const client_id = process.env.TWITCH_CLIENT_ID
-const client_secret = process.env.TWITCH_CLIENT_SECRET
-const server_url = process.env.API_URL
+const client_id = 'wkhvocil53vhqosr9p2mw0v982jbpl'
+const client_secret = 'ohq5cmwo7yriov3qehqgx3hzwtn6vj'
+const server_url = 'https://sea-lion-app-x8jo9.ondigitalocean.app'
 
 
 const integration = {
